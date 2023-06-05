@@ -35,5 +35,5 @@ steps:
 images:
 - us-central1-docker.pkg.dev/$PROJECT_ID/$_REPO_NAME/myimage
 options:
-logging: CLOUD_LOGGING_ONLY
+  logging: CLOUD_LOGGING_ONLY
 # [END cloudbuild_run_example_builddeploy]
