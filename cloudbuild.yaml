@@ -18,3 +18,5 @@
    - 'us-east5'
  images:
  - 'gcr.io/$PROJECT_ID/hello-service:$COMMIT_SHA'
+ options:
+  logging: CLOUD_LOGGING_ONLY
