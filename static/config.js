@@ -14,6 +14,6 @@
  */
 
 const config = {
-  apiKey: 'API_KEY',
-  authDomain: 'PROJECT_ID.firebaseapp.com',
+  apiKey: 'AIzaSyA0wFsKMb_n6HKKaGpk9nQmM60OWce9hVU',
+  authDomain: 'matt-maas-sb-66.firebaseapp.com',
 };
