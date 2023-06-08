@@ -24,16 +24,16 @@
   # [START cloudbuild_run_example_builddeploy]
 steps:
 # # Build the container image
-# - name: 'gcr.io/cloud-builders/docker'
-#   args: ['build', '-t', 'us-east5-docker.pkg.dev/$PROJECT_ID/$REPO_NAME/myimage:$SHORT_SHA', '.']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'us-east5-docker.pkg.dev/$PROJECT_ID/$REPO_NAME/voteapp:$SHORT_SHA', '.']
 # # Push the container image to Container Registry
-# - name: 'gcr.io/cloud-builders/docker'
-#   args: ['push', 'us-east5-docker.pkg.dev/$PROJECT_ID/$REPO_NAME/myimage:$SHORT_SHA']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'us-east5-docker.pkg.dev/$PROJECT_ID/$REPO_NAME/voteapp:$SHORT_SHA']
 # # Deploy container image to Cloud Run
 # - name: 'gcr.io/cloud-builders/gcloud'
-#   args: ['run', 'deploy', 'myservice', '--image', 'us-east5-docker.pkg.dev/$PROJECT_ID/$REPO_NAME/myimage:$SHORT_SHA', '--region', 'us-central1', '--platform', 'managed', '--allow-unauthenticated']
+#   args: ['run', 'deploy', 'myservice', '--image', 'us-east5-docker.pkg.dev/$PROJECT_ID/$REPO_NAME/voteapp:$SHORT_SHA', '--region', 'us-central1', '--platform', 'managed', '--allow-unauthenticated']
 # images:
-# - us-east5-docker.pkg.dev/$PROJECT_ID/$REPO_NAME/myimage
+# - us-east5-docker.pkg.dev/$PROJECT_ID/$REPO_NAME/voteapp
 # options:
 #   logging: CLOUD_LOGGING_ONLY
 # # [END cloudbuild_run_example_builddeploy]
